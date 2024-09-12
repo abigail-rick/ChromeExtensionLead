@@ -1,15 +1,16 @@
-chrome://extensions/
 
 const inputBtn = document.getElementById('input-btn');
 const textInput = document.getElementById('input-el');  
 const ulLi = document.getElementById('ul-el');
 let myLeads = [];
 
+
 inputBtn.addEventListener("click", function(){
     myLeads.push(textInput.value);
 
-    renderLeads();
+   
     textInput.value = "";
+    renderLeads();
 })
   
 function renderLeads(){
@@ -23,3 +24,4 @@ function renderLeads(){
 }
 ulLi.innerHTML += listItems;
 }
+
