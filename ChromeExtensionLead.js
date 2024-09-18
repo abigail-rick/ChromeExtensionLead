@@ -10,6 +10,7 @@ const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 if(leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage;
     render(myLeads);
+    
 }
 
 saveBtn.addEventListener("click", function(){
@@ -18,9 +19,8 @@ myLeads.push(tabs[0].url);
 localStorage.setItem("myLeads", JSON.stringify(myLeads) );
 render(myLeads);
 })
+
 });
-
-
 
 function render(leads){
     let listItems = "";
