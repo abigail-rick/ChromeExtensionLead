@@ -3,8 +3,8 @@
     "version": "1.0",
     "name": "Leads tracker",
     "action": {
-        "default_popup": "ChromeExtensionLead.html"
-
+        "default_popup": "ChromeExtensionLead.html",
+        "default_icon": "images/5736236.png"
         },
     
       "permissions": [
